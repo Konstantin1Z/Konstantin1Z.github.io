@@ -1,0 +1,125 @@
+
+.form
+{
+	width: 280px; 
+	height: 230px; 
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+	border: 1px solid black; 
+	margin: 10px;
+	padding: 5px;
+}
+.form input
+{width: 100%;}
+
+.form button
+{
+height: 40px;
+border-radius: 5px;
+}
+
+#add{margin-bottom: 30px; margin-top: 10px;}
+
+#all{width: 130px; margin-right: 5px;}
+
+#favonly{width: 130px;}
+
+.bas
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.child
+{
+	margin: 10px;
+	padding: 5px;
+	text-align: center;      
+	height: 230px;
+	width: 200px;
+	border-radius: 4px;
+	box-shadow: 0 3px 10px rgba(0,0,0,.16) !important;
+	display: flex;
+	flex-wrap: wrap;
+	/*align-items: center;*/
+  	/*justify-content: center;*/
+  	flex-direction: column;
+  	transition: transform 0.5s;
+  	background-color: #fbf5f5;
+}
+
+.child:hover{transform: scale(1.05);}
+
+.child div{margin-top: 5px; margin-bottom: 5px; font-size: 20px;}
+.child div:nth-child(1)
+{font-size: 30px; border-bottom: 1px solid black;}
+
+.addFavButon
+{display: block;}
+
+
+.dis
+{display: none;}
+
+.bigcard
+
+{
+	margin: 10px;
+	margin-left: 35%;
+	margin-top: 75px;
+	padding: 5px;
+	text-align: center;      
+	height: 500px;
+	width: 400px;
+	border-radius: 4px;
+	box-shadow: 0 3px 10px rgba(0,0,0,.16) !important;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;/**/
+  	justify-content: center;/**/
+  	flex-direction: column;
+  	transition: transform 0.5s;
+  	background-color: #fbf5f5;
+
+animation: shimmy2 3s infinite;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+
+.bigcard:hover{transform: scale(1.01);}
+
+.bigcard div{margin-top: 5px; margin-bottom: 5px; font-size: 32px;}
+.bigcard div:nth-child(1)
+{font-size: 50px; border-bottom: 1px solid black; margin-top: 20px;}
+
+
+@keyframes shimmy2 
+{
+  0% {
+    transform: scale(0);  
+    opacity: 0;  
+  }
+  100% {
+    transform: scale(1);
+     opacity: 1;  
+  }
+}
+
+.bigcard input
+{background: #fbf5f5; border: 0px;}
+
+.bigcard input{margin-top: 5px; margin-bottom: 5px; font-size: 32px; text-align: center;}
+.bigcard input:nth-child(1)
+{font-size: 30px; border-bottom: 1px solid black; text-align: center;}
+
+.bigcard label {margin-top: 0px;}
+
+.bigcard button
+{margin-top: 0px; margin-bottom: 5px; height: 60px; border-radius: 10px; font-size: 30px; font-weight: bold; width: 390px; cursor: pointer;}
+
+
+
+
+
